@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clayton's Custom Cuts — Barber Shop in Truro, NS</title>
+<meta name="description" content="Clayton's Custom Cuts in Truro, NS — a down to earth, friendly barber shop for men, women and children's hair at 43 Brunswick St. Appointments preferred. Call 902-895-5500.">
+<style>
+:root{--ink:#26221e;--rust:#9c3d1e;--paper:#f7f3ec;--card:#ffffff;--line:#e2d9c8;--mut:#6d6252}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Verdana,Geneva,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px}
+header{background:var(--rust);color:#fff;padding:2rem 5vw 1.6rem}
+header h1{font-family:Arial,Helvetica,sans-serif;font-size:2rem;letter-spacing:.01em}
+header p{opacity:.92;max-width:40rem;margin-top:.4rem;font-size:.98rem}
+nav{background:#7e2f14;padding:.55rem 5vw}
+nav a{color:#ffe9dd;text-decoration:none;margin-right:1.3rem;font-size:.9rem;font-weight:bold}
+main{padding:2rem 5vw;max-width:1020px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--rust);padding:1.3rem 1.4rem;margin-bottom:1.4rem}
+.card h2{font-family:Arial,Helvetica,sans-serif;font-size:1.3rem;color:var(--rust);margin-bottom:.6rem}
+.card p,.card li{font-size:.97rem}
+ul.tick{list-style:none}
+ul.tick li{padding:.35rem 0 .35rem 1.4rem;position:relative;border-bottom:1px dashed var(--line)}
+ul.tick li:last-child{border:none}
+ul.tick li::before{content:"✂";position:absolute;left:0;color:var(--rust)}
+.hours{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem;margin-top:.6rem}
+.day{background:var(--paper);border:1px solid var(--line);padding:.8rem;text-align:center}
+.day b{display:block;font-family:Arial,Helvetica,sans-serif}
+.closed{color:var(--mut)}
+a.btn{display:inline-block;background:var(--rust);color:#fff;text-decoration:none;padding:.75rem 1.4rem;font-weight:bold;margin-top:.8rem}
+form label{display:block;font-size:.88rem;font-weight:bold;margin:.8rem 0 .3rem}
+form input,form select,form textarea{width:100%;padding:.6rem;border:1px solid #c9bda3;font:inherit;background:#fff}
+form button{margin-top:1rem;background:var(--rust);color:#fff;border:none;padding:.75rem 1.4rem;font:inherit;font-weight:bold;cursor:pointer}
+.note{font-size:.83rem;color:var(--mut);margin-top:.7rem}
+#ref{margin-top:.7rem;font-weight:bold;color:var(--rust)}
+footer{background:#26221e;color:#d8cfbc;padding:1.8rem 5vw;font-size:.9rem}
+footer a{color:#f2b28c}
+</style>
+</head>
+<body>
+<header>
+  <h1>Clayton's Custom Cuts</h1>
+  <p>A down to earth, friendly barber shop in Truro — haircuts for men, women and children. Appointments preferred.</p>
+</header>
+<nav><a href="#services">Services</a><a href="#hours">Hours</a><a href="#contact">Contact</a></nav>
+<main>
+  <div class="card" id="services">
+    <h2>What we do</h2>
+    <ul class="tick">
+      <li><strong>Men's haircuts</strong> — everyday cuts and clean-ups</li>
+      <li><strong>Women's haircuts</strong> — cuts for the whole family under one roof</li>
+      <li><strong>Children's haircuts</strong> — patient chairs for young customers</li>
+    </ul>
+    <p style="margin-top:.7rem">Barber shop specializing in men, women and children's hair — in a down to earth, friendly atmosphere.</p>
+    <a class="btn" href="tel:+19028955500">Call 902-895-5500</a>
+  </div>
+  <div class="card" id="hours">
+    <h2>Hours — 43 Brunswick St, Truro</h2>
+    <div class="hours">
+      <div class="day"><b>Tuesday</b>8:30 AM – 5:00 PM</div>
+      <div class="day"><b>Wednesday</b>8:30 AM – 5:00 PM</div>
+      <div class="day"><b>Thursday</b>8:30 AM – 5:00 PM</div>
+      <div class="day"><b>Friday</b>8:30 AM – 5:00 PM</div>
+      <div class="day closed"><b>Saturday</b>Closed</div>
+      <div class="day closed"><b>Sunday</b>Closed</div>
+      <div class="day closed"><b>Monday</b>Closed</div>
+    </div>
+    <p style="margin-top:.8rem">Clayton's Custom Cuts · 43 Brunswick St, Truro, NS B2N 2G8 · <a href="tel:+19028955500">902-895-5500</a> · <a href="https://www.facebook.com/claytonscuts">Clayton's Custom Cuts on Facebook</a></p>
+  </div>
+  <div class="card" id="contact">
+    <h2>Ask about an appointment</h2>
+    <form id="cf">
+      <label for="n">Name</label><input id="n" name="name" type="text" autocomplete="name">
+      <label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel">
+      <label for="s">Service</label>
+      <select id="s" name="service"><option>Men's haircut</option><option>Women's haircut</option><option>Children's haircut</option></select>
+      <label for="m">Anything we should know?</label><textarea id="m" name="message" rows="3"></textarea>
+      <button type="submit">Send request</button>
+      <p class="note">Concept form — nothing is sent or stored. Please reach out by phone or on social media instead.</p>
+      <p id="ref" role="status"></p>
+    </form>
+  </div>
+</main>
+<footer>
+  <p><strong>Clayton's Custom Cuts</strong> · 43 Brunswick St, Truro, NS B2N 2G8 · <a href="tel:+19028955500">902-895-5500</a> · <a href="https://www.facebook.com/claytonscuts">Facebook</a></p>
+  <p style="margin-top:.5rem">Concept website prepared for Clayton's Custom Cuts. Concept form — nothing is sent or stored. Please reach out by phone or on social media instead.</p>
+</footer>
+<script>
+document.getElementById('cf').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ref').textContent='Thanks — your reference is '+'CLC-'+Math.floor(1000+Math.random()*9000)+'. Nothing was sent — this demo form only shows a reference.';});
+</script>
+</body>
+</html>
